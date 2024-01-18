@@ -1,0 +1,116 @@
+INTRODUCTION
+
+- there are many ways to stylize a web page
+    1. Inline
+    2. Internal
+    3. External
+
+1. Inline
+- edit specific tags by typing style = "" and filling in muliple tags
+Example:
+    <body style="background-color: black">
+        <h1 style="color: white">This is my website</h1>
+        <p style="background-color: gray; color: white;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut perferendis
+        quo, explicabo, eum ipsa possimus quia sint illum repudiandae sed
+        perspiciatis, illo optio asperiores officiis fugit enim! Quisquam, nam
+        nemo.
+        </p>
+
+2. Internal - within the head place a <style> </style> tag and within the style tag specify a tage type followed by
+brackets and insert that tags style attributes
+Example
+    <style>
+      body {
+        background-color: black;
+      }
+    </style>
+
+3. External - put the same syntax as internal into a seperate file.css and then link the html
+to the sytle sheet
+    - can link mutltiple files to one sheet
+
+
+- Adding specific features to specific widgets
+    - Add an id to the tag and then use that id as the unique idenitifier before the brackets
+    - These ids act as subclasses of the tags and if not specified in the style sheet they will go withi
+    the style of their parent tags.
+    - ids are called witha # tag infront of them
+
+
+- you can add paragraphs a class and then style the whole class
+    - class are called with a . infront of them in the style sheet
+
+Example: <p id="p4" class="even">
+
+_________________________________________________________________________________________________________
+
+FONTS
+
+Getting Fonts Online 
+- fonts.google.com has free fonts on there
+- copy the link tag and paaste it in the header of the html file
+
+Attributes
+- "font-famly" attribute - this takes in a list of font names, with the first font in priority
+  and it will pick and available font
+- font-style attribute
+- font-weight attribute
+- text-decoration
+- font-size 
+
+reference a id with as # in frotn
+reference a class with a . infront
+
+____________________________________________________________________________________________________________
+
+
+BORDERS
+
+h1 {
+  border-top-style: dotted;
+  border-bottom-style: dotted; 
+  border-left-style: double;
+  border-left-width: 10px;
+  border-left-color: silver;
+}
+
+p {
+  border-style: outset;
+  border-width: 5px;
+  border-color: gold;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+____________________________________________________________________________________________________________
+
+BACKGROUND
+
+body {
+  background-image: url("johnlennonsglasses.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+}
+h1 {
+  background: linear-gradient(to left, skyblue, white);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+p {
+  background: linear-gradient(to right, skyblue, white);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+____________________________________________________________________________________________________________
+
+MARGINS
+
+margin - the space outsdide of a border
+padding - the space between the element and the border
+
+margins can be sett using percaentages or pixels for example if you do 50% magin the margin with be iin the center of the screen aslways
+margins can be set to auto which will put complete margin in the side you specify
